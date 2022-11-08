@@ -24,14 +24,21 @@ class todoservice{
 
     add_todo(todo){
         // Your code here
+        console.log(this.todo_data);
+        this.todo_data.todo.push(todo);
+        console.log(this.todo_data);
+        const ele = this.todos.todo[3];
+        return ele ;
     }
 
-    delete_todo(id){
+    delete_todo(){
         // Your code here
+        
     }
 
     update_todo(id, todo){
         // Your code here
+    
     }
 }
 
