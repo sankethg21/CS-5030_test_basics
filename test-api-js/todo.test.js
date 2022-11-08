@@ -38,6 +38,18 @@ describe('todo test suite', () => {
     }); 
     
 
+    test("update_todos", () => {
+        expect(todo_service.update_todo(1,{ "title": "T100",
+        "description": "Desc1",
+        "done": true
+    })).toEqual({ "title": "T100",
+    "description": "Desc1",
+    "done": true
+    });
+
+});
+
+
     // const testAddition = [{
     //     "title": "T1",
     //     "description": "D100",
