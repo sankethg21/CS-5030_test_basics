@@ -33,6 +33,9 @@ describe('todo test suite', () => {
     });
     });
      
+    test("delete_todo", () => {
+        expect(todo_service.delete_todo().todo.length).toEqual(3);
+    }); 
     
 
     // const testAddition = [{

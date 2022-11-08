@@ -33,7 +33,10 @@ class todoservice{
 
     delete_todo(){
         // Your code here
-        
+        this.todo_data.todo.shift();
+        // const ele1= this.todos.todo.length();
+        return this.todos
+
     }
 
     update_todo(id, todo){
